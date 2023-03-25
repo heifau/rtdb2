@@ -1,0 +1,14 @@
+{
+  "name": "rtdb",
+  "version": "1.0.0",
+  "description": "Firebase realtime database",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "firebase": "^9.17.1"
+  }
+}

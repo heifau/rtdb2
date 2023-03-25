@@ -1,0 +1,24 @@
+cd C:\Users\heinz\NoneDrive\rtdb
+
+
+firebase emulators:start
+firebase --debug emulators:start
+firebase  emulators:start --import ./eximpdir --export-on-exit
+
+arduino HFrtb
+
+	DATABASE_NAME .firebaseio.com => DATABASE_NAME .europe-west1.firebasedatabase.app
+
+curl "https://rtdb-b44bd-default-rtdb.europe-west1.firebasedatabase.app/ESP32/intval1.json"
+curl "https://www.europe-west1.firebasedatabase.app/ESP32/intval1.json?ns=rtdb-b44bd-default-rtdb"
+curl -X PUT -d "99" "http://127.0.0.1:9000/Zahlen/Zahl1.json?ns=rtdb-b44bd-default-rtdb"
+?? curl "http://rtdb-b44bd-default-rtdb.localhost:9000/Wert.json"
+curl "http://localhost:9000/Wert.json?ns=rtdb-b44bd-default-rtdb"
+curl "http://localhost:9000/.json?ns=rtdb-b44bd-default-rtdb"
+curl "http://127.0.0.1:9000/Wert.json?ns=rtdb-b44bd-default-rtdb"
+... ipconfig ...
+curl "http://192.168.2.110:9000/Wert.json?ns=rtdb-b44bd-default-rtdb"
+curl "http://192.168.2.110:9000/.json?ns=rtdb-b44bd-default-rtdb"
+curl "http://192.168.178.45:9000/.json?ns=rtdb-b44bd-default-rtdb"
+
+
